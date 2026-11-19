@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zwieny Andrea Dapitin | Portfolio</title>
+  <meta name="description" content="Portfolio of Zwieny Andrea Dapitin, a BSIT student - skills, achievements and contact." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <a href="#home" class="logo" aria-label="Home">ZA</a>
+
+    <form class="search" id="searchForm" role="search">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" id="searchInput" placeholder="Search..." aria-label="Search sections" />
+    </form>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="active">HOME</a>
+      <a href="#about">ABOUT ME</a>
+      <a href="#skills">SKILLS &amp; ACHIEVEMENT</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== HOME / HERO ===== -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="photo-circle hero-photo reveal">
+          <img src="e13f11fa-d323-417f-810c-f1aa3d19eef9.jpg" alt="Zwieny Andrea" />
+        </div>
+
+        <div class="hero-text reveal">
+          <h1>WELCOME!</h1>
+          <p>Here, you can explore my skills, achievements, and how to contact me</p>
+          <a href="#about" class="btn">GET STARTED</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ME ===== -->
+    <section class="about" id="about">
+      <div class="container about-inner">
+        <div class="about-text reveal">
+          <h2 class="section-title">
+            <i class="fa-solid fa-user"></i> ABOUT ME
+          </h2>
+          <p>
+            Hi! I'm Zwieny, a BSIT student who enjoys learning about technology,
+            being creative, and exploring new ideas.
+          </p>
+        </div>
+
+        <div class="photo-circle about-photo reveal">
+          <img src="a9078607-06a1-4873-907e-1408b20f7669.jpg" alt="Zwieny at the beach" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS & ACHIEVEMENT ===== -->
+    <section class="skills" id="skills">
+      <div class="container skills-inner">
+        <div class="skills-col reveal">
+          <h2 class="section-title center">SKILLS</h2>
+          <div class="skill-icons">
+            <div class="skill" data-skill="Figma">
+              <span class="skill-icon figma">
+                <img src="https://cdn.simpleicons.org/figma" alt="Figma" />
+              </span>
+              <span class="skill-name">Figma</span>
+            </div>
+            <div class="skill" data-skill="Canva">
+              <span class="skill-icon canva">Canva</span>
+              <span class="skill-name">Canva</span>
+            </div>
+            <div class="skill" data-skill="CapCut">
+              <span class="skill-icon capcut">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 6l8 4 8-4M4 18l8-4 8 4" />
+                  <path d="M4 6v12M20 6v12" />
+                </svg>
+              </span>
+              <span class="skill-name">CapCut</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="achievement-col reveal">
+          <h2 class="section-title center">ACHIEVEMENT</h2>
+          <figure class="certificate" id="certificate">
+            <img src="61271f8b-ca7c-401c-9190-5204f9bc4c15.jpg" alt="Academic Excellence certificate" />
+            <figcaption>Senior High School</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-title light reveal">MY CONTACT</h2>
+
+        <div class="contact-inner">
+          <ul class="contact-list reveal">
+            <li>
+              <span class="contact-icon"><i class="fa-solid fa-phone"></i></span>
+              <div>
+                <strong>Phone</strong>
+                <span>+63 900 000 0000</span>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon"><i class="fa-regular fa-envelope"></i></span>
+              <div>
+                <strong>Email</strong>
+                <span>youremail@example.com</span>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon"><i class="fa-solid fa-location-dot"></i></span>
+              <div>
+                <strong>Location</strong>
+                <span>Your City, Philippines</span>
+              </div>
+            </li>
+          </ul>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <input type="email" id="email" placeholder="Email" required />
+            <textarea id="message" rows="4" placeholder="Message" required></textarea>
+            <button type="submit" class="btn btn-light">Send Message</button>
+            <p class="form-status" id="formStatus" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Zwieny Andrea Dapitin. All rights reserved.</p>
+  </footer>
+
+  <!-- Certificate preview (lightbox) -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+    <img src="" alt="Certificate preview" id="lightboxImg" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
